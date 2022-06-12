@@ -14,12 +14,12 @@ public class Calc {
         double max = 0;
 
         while(input.hasNextDouble()){
-            double x = input.nextDouble();
-            sum += x;
+            double n = input.nextDouble();
+            sum += n;
             numberOfNumbers +=1;
             avg = sum/numberOfNumbers;
-            if(x > max){
-                max = x;
+            if(n > max){
+                max = n;
             }
         }
         System.out.println("Сумма введенных чисел = " + sum);
