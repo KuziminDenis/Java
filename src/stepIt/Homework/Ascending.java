@@ -1,5 +1,7 @@
 package stepIt.Homework;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -9,8 +11,12 @@ public class Ascending {
         int max = 0;
         int x = 0;
         int tmp;
-       int[] inputMass = new int[5];
 
+        Scanner inputMassSize = new Scanner(System.in);
+        System.out.print("Введите размер массива ");
+        int massSize = inputMassSize.nextInt();
+       int[] inputMass = new int[massSize];
+        System.out.println("Введите элементы массива: ");
         for(int i = 0; i < inputMass.length ; i++){
             x = input.nextInt();
             inputMass[i] = x;
@@ -28,9 +34,9 @@ public class Ascending {
 
 
         }
-
+        System.out.print("Отсортированный массив по возрастанию: ");
         for(int i = 0; i < inputMass.length; i++){
-            System.out.println(inputMass[i]);
+            System.out.print(" " + inputMass[i]);
         }
 
 
