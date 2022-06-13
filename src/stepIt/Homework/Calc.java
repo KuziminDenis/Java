@@ -12,7 +12,7 @@ public class Calc {
         double avg = 0;
         int numberOfNumbers = 0;
         double max = 0;
-
+        System.out.println("Ввод числовых значений, выход нажатие буквенного значения: ");
         while(input.hasNextDouble()){
             double n = input.nextDouble();
             sum += n;
